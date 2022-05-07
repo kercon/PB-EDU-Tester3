@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        [title~=flower] {
+            border: 5px solid yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Demo of the selectors</h1>
+    <div class="style-scope">
+        <p> p in style-scope</p>
+    </div>
+    <div class="style-transition">
+        <p> p in style-transition</p>
+    </div>
+    <div class="scope-transition">
+        <p> p in scope-transition</p>
+    </div>
+    <div class="scope">
+        <p> p in style</p>
+    </div>
+    <div class="style">
+        <p> p in style</p>
+    </div>
+    <div class="scope transition">
+        <p> p in scope transition</p>
+    </div>
+    <div class="rodzic">
+        <div class="dziecko">
+            .dziecko in .rodzic
+        </div>
+    </div>
+    <div class="rodzic">
+        <div class="problem">
+            <div class="dziecko">
+                .dziecko in .problem in .rodzic
+            </div>
+        </div>
+    </div>
+    <img src="klematis.jpg" title="klematis flower" width="150" height="113">
+    <img src="img_flwr.gif" title="flowers" width="224" height="162">
+    <img src="landscape.jpg" title="landscape" width="160" height="120">
+
+</body>
+
+</html>

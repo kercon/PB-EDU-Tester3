@@ -1,0 +1,8 @@
+{
+    "testfiles":
+    [
+        "todo.spec.js",
+        "firsttest.spec.js"
+    ],
+    "chromeWebSecurity": false
+}
