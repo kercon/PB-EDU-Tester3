@@ -46,6 +46,16 @@
     <img src="img_flwr.gif" title="flowers" width="224" height="162">
     <img src="landscape.jpg" title="landscape" width="160" height="120">
 
+    <p>Click to display the time.</p>
+    <button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+    <p id="demo"></p>
+    <input type="text" oninput="myFunction(this.value)">                             
+    <p id="demo2"></p>
+    <script>
+    function myFunction(val) {
+        document.getElementById("demo2").innerHTML = val; 
+    }
+</script>
 </body>
 
 </html>
