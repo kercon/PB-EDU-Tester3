@@ -1,7 +1,8 @@
 {
   "scripts": {
     "cy:run": "cypress run",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "page:run": "npx http-server ./page/"
   },
   "devDependencies": {
     "cypress": "^9.6.0",
