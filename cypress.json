@@ -4,5 +4,10 @@
         "todo.spec.js",
         "firsttest.spec.js"
     ],
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "env":{
+        "Lang":"PL"
+    }
 }
