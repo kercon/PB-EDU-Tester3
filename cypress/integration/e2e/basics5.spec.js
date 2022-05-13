@@ -8,14 +8,18 @@ describe('User can navigate Youtube', function () {
         cy.get('ytd-rich-grid-row:first-child ytd-rich-item-renderer:nth-child(1) #video-title-link', { timeout: 30000 })
             .should('be.visible').invoke('text').as('label');
         cy.get('@label').then(($label) => {
+            //debugger;
             cy.log($label);
             cy.get('ytd-rich-grid-row:first-child ytd-rich-item-renderer:nth-child(1) #video-title-link').click().wait(3000);
             cy.get('.ytd-watch-flexy > :nth-child(1) > .title > .style-scope', { timeout: 30000 })
                 .invoke('text').then(($title) => {
+                    //debugger;
                     expect($title).to.equal($label);
                 })
             cy.get('.ytd-watch-flexy > :nth-child(1) > .title > .style-scope', { timeout: 30000 })
                 .invoke('text').should('contain', $label);
+            cy.get('.ytd-watch-flexy > :nth-child(1) > .title > .style-scope', { timeout: 30000 })
+                .should('contain', $label);
         })
         cy.log('sup')
     })
