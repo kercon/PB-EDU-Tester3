@@ -6,7 +6,8 @@
   },
   "devDependencies": {
     "cypress": "^9.6.0",
-    "cypress-xpath": "^1.6.2"
+    "cypress-xpath": "^1.6.2",
+    "http-server": "^14.1.0"
   },
   "dependencies": {
     "lodash": "^4.17.21"

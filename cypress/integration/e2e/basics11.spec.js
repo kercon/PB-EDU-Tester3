@@ -55,7 +55,8 @@ describe("PageObjects",() => {
         searchResult.searchInput().clear().type('{enter}');
     })
     it('Using PageObject',()=>{    
-        cy.closeCookies(google);    
+        cy.closeCookies(google);
+        //cy.nothing();    
         //searchResult.confirmCookies().click();
     })
 })
