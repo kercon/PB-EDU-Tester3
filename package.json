@@ -2,6 +2,7 @@
   "scripts": {
     "cy:run": "cypress run",
     "cy:record:run": "cypress run --record --key 325e2df8-d784-40fa-b03d-e4daa835688d",
+    "cy:gitHub:record:run": "cypress run --record --key 325e2df8-d784-40fa-b03d-e4daa835688d --config-file ./cypressGitHub.json ",
     "cy:open": "cypress open",
     "page:run": "npx http-server ./page/",
     "merge:reports": "mochawesome-merge mochawesome-report/*.json>combined-report.json",

@@ -4,6 +4,9 @@
         "todo.spec.js",
         "firsttest.spec.js"
     ],
+    "video": false,
+    "videoUploadOnPasses": false,
+    "screenshotOnRunFailure": false,
     "projectId": "sa28v5",
     "chromeWebSecurity": false,
     "viewportWidth": 1920,
