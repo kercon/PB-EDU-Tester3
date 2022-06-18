@@ -46,9 +46,10 @@ describe("Commands",() => {
     })
     it('Using Command',function (){        
         cy.nothing();
-        cy.get('a').should('have.length',20)
+        //cy.wait(1000);
+        //cy.get('a').should('have.length',20)
         cy.get('body').checkElementVisibility();
-        cy.returnAelements().should('have.length',20);
+        //cy.returnAelements().should('have.length',20);
         cy.searchGoogle('Wikipedia[salt]');
         cy.memo().then(($value)=>{
             cy.log($value.value)
