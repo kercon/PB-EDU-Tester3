@@ -26,3 +26,6 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   // failing the test
   return false
 })
+
+Cypress.env('something','some');
+Cypress.config('some','something');

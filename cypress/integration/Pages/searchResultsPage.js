@@ -47,5 +47,19 @@ class searchResultPage {
         return cy.get(this.cookiesPopupSelector);
     }
 
+    searchInput2() {
+        cy.get(this.searchInputSelector);
+        return this;
+    }
+
+    inputInSearchInput(text) {
+        cy.get(this.searchInputSelector).type(text);
+        return this;
+    }
+
+    validateSearch(text){
+        return cy.get(`div[data-async-context='query:${text}']`).should('be.visible');
+    }
+
 }
 export default searchResultPage;

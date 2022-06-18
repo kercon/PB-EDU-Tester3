@@ -6,9 +6,11 @@ describe('Loading enviorments', function () {
         cy.log(Cypress.env('Lang'));
         cy.log('Extended by cypress.env.json should be somefile.txt')
         cy.log(Cypress.env('File'));
+        cy.log(Cypress.env('something'));
         cy.task('log','Base cypress.json should be PL');
         cy.task('log',Cypress.env('Lang'));
         cy.task('log','Extended by cypress.env.json should be somefile.txt');
         cy.task('log',Cypress.env('File'));
+        
     })
 })
