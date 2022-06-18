@@ -9,5 +9,13 @@
     "viewportHeight": 1080,
     "env":{
         "Lang":"PL"
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "timestamp": "isoDateTime",
+        "overwrite": false,
+        "html": true,
+        "json": true
     }
 }

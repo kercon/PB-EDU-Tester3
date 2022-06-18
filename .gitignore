@@ -107,3 +107,7 @@ dist
 cypress/videos/
 cypress/screenshots/
 cypress/downloads/
+mochawesome-report/
+reportHtml/
+testReport/
+combined-report.json
