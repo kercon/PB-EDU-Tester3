@@ -4,6 +4,7 @@
         "todo.spec.js",
         "firsttest.spec.js"
     ],
+    "projectId": "sa28v5",
     "chromeWebSecurity": false,
     "viewportWidth": 1920,
     "viewportHeight": 1080,
