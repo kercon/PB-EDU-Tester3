@@ -41,7 +41,7 @@ Cypress.Commands.add('memo',()=>{
 
 describe("Commands",() => {
     beforeEach(function (){
-        cy.visit("http://www.google.com");
+        cy.visit("https://www.google.com");
         cy.closeGooglePrefernces();
     })
     it('Using Command',function (){        
